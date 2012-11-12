@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tracker-config extends="org/magictracker/default-config.xml">
+	<startup>true</startup>
+	<visible-list>
+		<name>init</name>
+		<name>config</name>
+		<name>readfile</name>
+		<name>execute</name>
+	</visible-list>
+	<handlers>
+		<handler id="txtFileHandler" clazzName="org.magictracker.handler.TxtHandler" path="output/">
+			<formatter clazzName="org.magictracker.handler.LayerFormatter"/>
+		</handler>
+		<handler id="htmlFileHandler" clazzName="org.magictracker.handler.HtmlHandler" path="output/">
+			<formatter clazzName="org.magictracker.handler.HtmlFormatter"/>
+		</handler>
+	</handlers>
+</tracker-config>

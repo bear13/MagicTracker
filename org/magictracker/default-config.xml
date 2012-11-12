@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tracker-config>
+	<handlers>
+		<handler id="streamHandler" clazzName="org.magictracker.handler.StreamHandler">
+			<formatter clazzName="org.magictracker.handler.LayerFormatter"/>
+		</handler>
+	</handlers>
+</tracker-config>

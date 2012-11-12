@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="MagicTracker" basedir="." default="buildJar">
+	
+	<property name="build" value="build"/>
+	
+	<target name="buildJar" description="生成jar包">
+		<jar destfile="${build}/magictracker-0.0.jar">
+			<fileset dir=".">
+				<include name="org/magictracker/*.class"/>
+				<include name="org/magictracker/*.xml"/>
+				<include name="org/magictracker/conf/*.class"/>
+				<include name="org/magictracker/exception/*.class"/>
+				<include name="org/magictracker/handler/*.class"/>
+				<include name="org/magictracker/handler/*.html"/>
+				<include name="org/magictracker/impl/*.class"/>
+				<include name="org/magictracker/processor/*.class"/>
+			</fileset>
+		</jar>
+	</target>
+</project>
